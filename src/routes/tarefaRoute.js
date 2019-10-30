@@ -8,7 +8,7 @@ const tarefaValidation = require('../util/tarefaValidation')
 route.get('/?', apiController.verifica, tarefaValidation.listarPorDescricao, tarefaController.listarPorDescricao)
 route.get('/', apiController.verifica, tarefaController.listar)
 route.get('/:id', apiController.verifica, tarefaController.listarPorId)
-route.post('/', apiController.verifica, tarefaValidation.inserir, tarefaController.inserir)
+route.post('/', apiController.verifica, tarefaValidation.inserir,tarefaController.inserir)
 route.put('/:id', apiController.verifica, tarefaValidation.inserir, tarefaController.alterar)
 route.delete('/:id', apiController.verifica, tarefaController.deletar)
 
